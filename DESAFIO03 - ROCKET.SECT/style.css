@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --navyblue: #2C2B3D;
+    --strongcyan: #00BFA6;
+    --white: #ffffff;
+    --gray:#C2C2C2;
+    --darkgray: #7D7987;
+    --fontprimary: 'JetBrains Mono', sans-serif;
+    --fontsecundary: 'Open Sans', sans-serif;
+   
+}
+
+body{
+    background-color: var(--navyblue);
+    min-height: 100vh;
+}
+
+.page{
+    max-width: 1280px;
+    padding-top: 65px;
+    margin: auto;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 64px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white);
+}
+nav ul li a:hover{
+    opacity: 0.4;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    text-align: center;
+}
+
+h1{
+    color: var(--white);
+    font-size: 36px;
+    font-family: var(--fontprimary);
+    margin-bottom: 59px;
+}
+
+span{
+    color: var(--strongcyan);
+}
+
+.spangray{
+    color: var(--gray);
+    font-weight: bold;
+}
+
+p{
+    color: var(--gray);
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: var(--fontsecundary);
+    
+}
+.information{
+    
+    margin-bottom: 0;
+    max-width: max-content;
+    padding: 40px 60px 0 60px;
+    border-top: 1px solid var(--strongcyan);
+    color: var(--white);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 215px;
+    font-size: var(--fontprimary);
+    font-family: 14px;
+}
+.padlock{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
