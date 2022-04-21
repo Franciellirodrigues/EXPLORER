@@ -24,3 +24,6 @@ EXPLORER ROCKETSEAT 🚀
   
    ### Desafio dia 04 - Formulario para evento
 <img alt="" src="https://ik.imagekit.io/atnyozbx9v/desafio4_QAWY3Lg3e.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1650504716936">
+  
+  ### Desafio dia 05 -Aplicando a regra mobile first
+<img alt="" src="https://ik.imagekit.io/atnyozbx9v/smartmockups_l29btl07_Kdf-brb7I.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1650565093845">
