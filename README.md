@@ -27,3 +27,6 @@ EXPLORER ROCKETSEAT 🚀
   
   ### Desafio dia 05 -Aplicando a regra mobile first
 <img alt="" src="https://ik.imagekit.io/atnyozbx9v/smartmockups_l29btl07_Kdf-brb7I.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1650565093845">
+  
+    ### Desafio dia 06 - Componente Trabalhos
+<img alt="" src="https://ik.imagekit.io/atnyozbx9v/trabalhos_slCiZuBms9.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1650819228444">
