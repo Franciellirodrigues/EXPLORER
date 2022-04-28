@@ -30,3 +30,6 @@ EXPLORER ROCKETSEAT 🚀
   
   ### Desafio dia 06 - Componente Trabalhos
 <img alt="" src="https://ik.imagekit.io/atnyozbx9v/trabalhos_slCiZuBms9.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1650819228444">
+  
+ ### Desafio dia 08 - Formulario de avaliação
+<img alt="" src="https://ik.imagekit.io/atnyozbx9v/Capturar_NKSSzAnEK.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1651188533189">
