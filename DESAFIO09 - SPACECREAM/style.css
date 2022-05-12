@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    font-size: 62.5%;
+  
+  
+    --hue:300;
+    --bg-h1-color: hsla(var(--hue), 18%, 79%, 1);
+    --bg-header-color: hsla(var(--hue), 17%, 62%, 1);
+    --body-color:hsla(var(--hue), 100%, 97%, 1);
+    --bg-h2-color:hsla(var(--hue), 91%, 96%, 1);
+    --text-color:hsla(var(--hue), 17%, 35%, 1);
+  
+  
+    --title-font: 'Palanquin', sans-serif;
+    --text-font:'Staatliches', cursive;
+  }
+  body{
+    background: var(--body-color);
+  }
+  
+  header{
+    text-align: center;
+    padding: 3.2rem 0;
+    background: var(--bg-header-color);
+    margin-bottom: 1.4rem;
+  }
+  
+  header img{
+    animation: topdown 700ms;
+  }
+  
+  header h1{
+    margin-top: 4rem;
+    font-weight: 400;
+    font-family: var(--text-font);
+    font-size: 4rem;
+    line-height: 3.4rem;
+    text-transform: uppercase;
+    width: 100%;
+    padding: .8rem 0;
+    background: var(--bg-h1-color);
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    animation: topdown 700ms;
+  }
+  header p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: var(--title-font);
+    color: var(--text-color);
+    margin-bottom: 6.3rem;
+    animation: topdown 700ms;
+    display: none;
+  }
+  
+  main{
+    text-align: center;
+    display: grid;
+    margin: auto;
+    width: 32rem;
+    align-items: center;
+  }
+  
+  main p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: var(--title-font);
+    color: var(--text-color);
+    margin-bottom: 6.3rem;
+    animation: topdown 700ms;
+  }
+  
+  .cards{
+    display: grid;
+    gap: 3.2rem;
+  
+  }
+  
+  
+  .cards div:nth-child(1) img{
+    height: 32rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cards div:nth-child(2) img{
+    height: 45rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .cards div:nth-child(3) img{
+    height: 32rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cards div:nth-child(4) img{
+    min-height: 45rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .cards div:nth-child(5){
+    display: none;
+    
+  }
+  .cards div:nth-child(6){
+    display: none;
+    
+  }
+  
+  
+  .card{
+    position: relative;
+    gap: 3.2rem;
+    transition: .2s;
+    animation: leftrigth 700ms;
+    cursor: pointer;
+  }
+  
+  .card img{
+    max-width: 32rem;
+    transition: .3s;
+    border-radius: 2rem;
+  }
+  
+  .card:hover{
+    transform: scale(1.1);
+    opacity: 1.1;
+    filter: brightness(1) saturate(1.5);
+  }
+  .card:hover h2{
+    animation: pulse 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .card h2{
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  color: var(--text-color);
+  position:absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  padding: 0 2.4rem;
+  background: var(--bg-h2-color);
+  border-radius: 2rem;
+  width: fit-content;
+  }
+  
+  main footer{
+    font-family: var(--title-font);
+    color: black;
+    display: none;
+  }
+  
+  @keyframes pulse{
+    0%{
+      transform: scale(1);
+      opacity: 1;
+      filter: brightness(0) saturate(0);
+    }
+    25%{
+      transform: scale(1);
+      opacity: 0;
+      filter: brightness(0) saturate(0);
+    }
+    50%{
+      transform: scale(1);
+      opacity: 1;
+      filter: brightness(1) saturate(1.5);
+    }
+    100%{transform: scale(1.1);
+      opacity: 1.1;
+      filter: brightness(1) saturate(1.5);}
+  }
+  
+  @keyframes topdown{
+    0%{
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes leftrigth{
+    0%{
+      
+      transform: translateX(-15px);
+    }
+    50%{
+      
+      transform: translateX(15px);
+    }
+    100%{
+      
+      transform: translateX(0px);
+    }
+  }
+  @media (min-width: 720px){
+    .page{
+      max-width: 100%;
+      display: flex;
+    }
+    header{
+      width: clamp(3rem, 1rem + 40vw, 37rem);;
+      margin: 0;
+   
+    }
+    header p{
+      margin-top: 5rem;
+      display: flex;
+      padding: 0 5rem;
+  
+    }
+    main{
+      
+      padding: 6.4rem 6rem;
+      display: grid;
+      text-align: center;
+      margin: auto;
+      align-items: center;
+      width: auto;
+      
+    }
+    main p{
+      display: none;
+    }
+    main footer{
+      display: flex;
+      text-align: center;
+      margin: 5rem auto;
+      font-size: 1.4rem;
+      line-height: 2.8rem;
+    }
+  
+    .card img {
+      max-width:  40rem;
+      }
+    
+    .cards{
+      grid-template-areas: "A B"
+      "A D"
+      "C D";
+     
+    }
+    .cards div:nth-child(1) img{
+      height: 50rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .cards div:nth-child(2) img{
+      height: 20rem;
+      width: 100%;
+      object-fit: cover;
+    }
+    .cards div:nth-child(3) img{
+      height: 20rem;
+      width: 100%;
+      object-fit: cover;
+    }
+    .cards div:nth-child(4) img{
+      height: 50rem;
+      width: 100%;
+      object-fit: cover;
+    }
+   
+    .cards div:nth-child(1){
+      grid-area: A;
+    }
+    .cards div:nth-child(2){
+      grid-area: B;
+    }
+  
+    .cards div:nth-child(3){
+      grid-area: C;
+    }
+  
+    .cards div:nth-child(4){
+      grid-area: D;
+    }
+  }
+    
+  @media (min-width: 1200px){
+    .cards{
+      grid-template-areas: "A B E"
+      "A D E"
+      "C D F";
+     
+    }
+    .cards div:nth-child(1) img{
+      height: 50rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .cards div:nth-child(2) img{
+      height: 20rem;
+      width: 100%;
+      object-fit: cover;
+    }
+    .cards div:nth-child(3) img{
+      height: 20rem;
+      width: 100%;
+      object-fit: cover;
+    }
+    .cards div:nth-child(4) img{
+      height: 50rem;
+      width: 100%;
+      object-fit: cover;
+    }
+    .cards div:nth-child(5) img{
+      height: 50rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .cards div:nth-child(6) img{
+      height: 20rem;
+      width: 100%;
+      object-fit: cover;
+    }
+   
+    .cards div:nth-child(1){
+      grid-area: A;
+    }
+    .cards div:nth-child(2){
+      grid-area: B;
+    }
+  
+    .cards div:nth-child(3){
+      grid-area: C;
+    }
+  
+    .cards div:nth-child(4){
+      grid-area: D;
+    }
+  
+    .cards div:nth-child(5){
+      display: block;
+      grid-area: E;
+    }
+  
+    .cards div:nth-child(6){
+      display: block;
+      grid-area: F;
+    }
+  
+  }
+  
+    
