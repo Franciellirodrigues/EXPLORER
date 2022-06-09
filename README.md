@@ -34,5 +34,8 @@ EXPLORER ROCKETSEAT 🚀
  ### Desafio dia 08 - Formulario de avaliação
 <img alt="" src="https://ik.imagekit.io/atnyozbx9v/Capturar_NKSSzAnEK.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1651188533189">
   
-   ### Desafio dia 09 - FocusTimer - Pomodoro
+   ### Desafio dia 09 - Space Cream
+<img alt="" src="https://ik.imagekit.io/atnyozbx9v/space_cream_OmZbTHU9I.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1654818611707">
+  
+   ### Desafio dia 10 - FocusTimer - Pomodoro
 <img alt="" src="https://ik.imagekit.io/atnyozbx9v/pomodoro_F3ggyugVcM.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1654817590688">
